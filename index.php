@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
               <ul id="menu">
                 <a href="#"><li>Home</li></a>
-                <a href="#"><li>Aggiungi Smartphone</li></a>
+                <a href="inserimento.php"><li>Aggiungi Smartphone</li></a>
                 <a href="#"><li>Elimina Smartphone</li></a>
                 <a href="#"><li>Modifica Smartphone</li></a>
                 <a href="#"><li>Cerca Smartphone</li></a>
@@ -44,7 +44,7 @@
                 <div class="face face2">
                     <div class="content">
                         <p>Telefoni Presenti: %PHNQTY%</p>
-                            <a href="#">Visualizza</a>
+                            <a href="visualizza.php">Visualizza</a>
                     </div>
                 </div>
             </div>
