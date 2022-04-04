@@ -16,6 +16,12 @@
 				<th>Modello</th>
 				<th>Prezzo</th>
 			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
 				
 <?php
 	$conn = new mysqli("localhost", "root", "", "DBTelefonini");
@@ -43,5 +49,7 @@
 	$conn->close();
 ?>
 </table>
+<br><br><br>
+<center><a href="index.php" class="button">Torna alla Home</a></center>
 </body>
 </html>

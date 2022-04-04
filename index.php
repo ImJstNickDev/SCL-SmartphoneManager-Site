@@ -20,8 +20,8 @@
               <ul id="menu">
                 <a href="#"><li>Home</li></a>
                 <a href="inserimento.php"><li>Aggiungi Smartphone</li></a>
-                <a href="#"><li>Elimina Smartphone</li></a>
-                <a href="#"><li>Modifica Smartphone</li></a>
+                <a href="eliminazione.php"><li>Elimina Smartphone</li></a>
+                <a href="modifica.php"><li>Modifica Smartphone</li></a>
                 <a href="#"><li>Cerca Smartphone</li></a>
                 <a href="#"><li>Lista Smartphone</li></a>
                 <a href="www.loser.com" target="_blank"><li>Show me more</li></a>
@@ -43,7 +43,21 @@
                 </div>
                 <div class="face face2">
                     <div class="content">
-                        <p>Telefoni Presenti: %PHNQTY%</p>
+                        <p>Telefoni Presenti: 
+                            <?php
+                                $conn = new mysqli("localhost", "root", "", "DBTelefonini");
+                                if($conn->connect_errno)
+                                {
+                                    exit;
+                                }
+                                $query = 'SELECT COUNT(*) as totale FROM Telefoni';
+                                $result = $conn->query($query);
+                                $row = $result->fetch_assoc();
+                                echo $row['totale'];
+                                $result->free();
+                                $conn->close();
+                            ?>
+                        </p>
                             <a href="visualizza.php">Visualizza</a>
                     </div>
                 </div>
@@ -54,13 +68,13 @@
                         <div class="cardicon">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAACbUlEQVR4nO3dMVIUURSF4V8UUhJDTWEBugDZAGIhsCSQMsOEGIrMQBegC9BYLQVCyCiKmQASMOgxc/o19L19uqfOV3Ujah6v3z/NAEmDmZlZrgVgCzgCfgFj4K5nM57s7QjYnOx5JqwDJ+gP+L5zDLxJOI/OPAbeoz/ItrMLzAWfTSdm4fD/zbvgs0m3jv7Qomct9IQSLVD9/FQfWPScMpAP5i30h5U1G4HnBOR8uAzmVn2A19ELZgR4Ufj6oymzkrCX/7kBntfso87L3K3FGFF/G9f5WnhtxHwo7KHutaPi1fdA6QDqvGrw+jZzDTxL3H8vtL2AzLug9O6P2L9c2wvIuguavPsj9i8XcQFfGqxz39nrcP9SERewDFw2WKvp/AEWO9y/VNQFLAMfgYsGa06bc2AfeCrYfyOl33sforTJjO8ZqdP9D/LfrLPEAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEDMAcQcQMwBxBxAzAHEHEAsI8A4Yc2+uIpeMCPAWcKafRF+bU+iFwS+A0s1Xx/EUyim+Ba9YMYd8Clhzb74rN5AE/NUz2yJfgiPek4YyMM8oXoStfrAIucWWA09oQ7soj+4qNkOPptOzFE9iVp9eG3f+TsM/O+lNYb5mfCbhMfXqsxTPQz5EPhJ+YmrihkBP4AD4O1kz2ZmZmn+AmmXlw2FxcfqAAAAAElFTkSuQmCC"/>
                         </div>
-                        <h3>Code</h3>
+                        <h3>Inserimento</h3>
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content">
-                        <p>lol immagina aggiungere del testo qui dentro</p>
-                            <a href="#">%RDM%</a>
+                        <p>Inserisci Nuovo Dispositivo</p>
+                            <a href="inserimento.php">Inserisci nuovo dispositivo</a>
                     </div>
                 </div>
             </div>

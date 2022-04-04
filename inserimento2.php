@@ -9,7 +9,6 @@
 	}
 	$query = 'INSERT INTO Telefoni(marca, modello, prezzo) VALUES("'.$marca.'", "'.$modello.'", "'.$prezzo.'");';
     $result = $conn->query($query);
-    $result->free();
 	$conn->close();
     HEADER("location:index.php");
 ?>

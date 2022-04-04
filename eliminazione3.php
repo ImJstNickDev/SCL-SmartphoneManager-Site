@@ -8,4 +8,5 @@
     $query = 'DELETE FROM Telefoni WHERE id = '.$id.';';
     $result = $conn->query($query);
 	$conn->close();
+    HEADER("location:index.php");
 ?>

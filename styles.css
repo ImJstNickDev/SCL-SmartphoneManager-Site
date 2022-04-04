@@ -7,6 +7,33 @@
 
 }
 
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+  border: 2px solid #1a1a1a;
+  background-color: #222222;
+  border-radius: 5px;
+  /*TEXT COLOR IS WHITE*/
+  color: #ffffff;
+  /*ADD MARGIN FROM TEXT TO BORDER*/
+  padding: 0.2em 0.5em;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #232323;
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
 
 body
 {
