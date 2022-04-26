@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Modifica i dati</h1>
-    <form action="modifica3.php" method="post">
+    <center><h1>Modifica i dati</h1></center>
+    <div class="fcontainer">
+        <form action="modifica3.php" method="post" class="forms">
 <?php
     $id = $_POST['id'];
     $conn = new mysqli("localhost", "root", "", "DBTelefonini");
@@ -32,7 +33,8 @@
     $result->free();
 	$conn->close();
 ?>
-        <input type="submit" value="Modifica">
-    </form>
+            <input type="submit" value="Modifica">
+        </form>
+    </div>
 </body>
 </html>

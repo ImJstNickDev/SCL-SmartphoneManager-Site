@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="modifica2.php" method="post">
-        <input type="text" name="id" placeholder="ID">
-        <br>
-        <input type="submit" value="Distruggi">
-        <input type="reset" value="Reset">
-    </form>
+    <div class="fcontainer">
+        <form action="modifica2.php" method="post" class="forms">
+            <input type="text" name="id" placeholder="ID">
+            <br>
+            <input type="submit" value="Trova">
+        </form>
+    </div>
 </body>
 </html>

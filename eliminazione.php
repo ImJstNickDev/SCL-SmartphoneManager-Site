@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="eliminazione2.php" method="post">
-        <input type="text" name="id" placeholder="ID">
-        <br>
-        <input type="submit" value="Distruggi">
-        <input type="reset" value="Reset">
-    </form>
+    <div class="fcontainer">
+        <form action="eliminazione2.php" method="post" clasS="forms">
+            <input type="text" name="id" placeholder="ID">
+            <br>
+            <input type="submit" value="Elimina">
+        </form>
+    </div>
 </body>
 </html>

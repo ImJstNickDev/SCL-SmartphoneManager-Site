@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="eliminazione3.php" method="post">
+    <div class="fcontainer">
+        <form action="eliminazione3.php" method="post" class="forms">
 <?php
     $id = $_POST['id'];
     $conn = new mysqli("localhost", "root", "", "DBTelefonini");
@@ -31,7 +32,8 @@
     $result->free();
 	$conn->close();
 ?>
-        <input type="submit" value="Conferma">
-    </form>
+            <input type="submit" value="Conferma">
+        </form>
+    </div>
 </body>
 </html>

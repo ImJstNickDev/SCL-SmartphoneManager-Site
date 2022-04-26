@@ -85,7 +85,7 @@ body
   cursor: pointer;
   
   opacity: 0; /* hide this */
-  z-index: 3; /* and place it over the hamburger */
+  z-index: 999; /* and place it over the hamburger */
   
   -webkit-touch-callout: none;
 }
@@ -234,7 +234,8 @@ body{
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    /*background: #ff0057;*/
+    background: #001891a2;
     transform: translateY(0);
 }
 
@@ -298,4 +299,65 @@ body{
 .cardicon
 {
     text-align: center;
+}
+
+.fcontainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 40px;
+}
+.forms
+{
+    /*Center the div*/
+    margin: 0 auto;
+    margin-top: 500px;
+    width: fit-content;
+    /*Add margin within the rows*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*Add padding within the rows*/
+    padding: 20px;
+    /*Add border*/
+    border: 1px solid rgb(49, 49, 49);
+    /*Add rounded corners*/
+    border-radius: 5px;
+    /*Add shadows*/
+    box-shadow: 5px 5px 50px rgb(0, 0, 0);
+    /*Add background color*/
+    background-color: #fff;
+    /*Align things in the div on center*/
+    text-align: center;
+    /*Space items in div vertically*/ 
+    display: flex;
+    flex-direction: column;
+    /*Align items vertically*/
+    align-items: center;
+    /*Add a margin on the top*/
+    margin-top: 10px;
+    /*Add a margin on the bottom*/
+    margin-bottom: 10px;
+    /*Add font family*/
+    font-family: consolas;
+
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
 }
