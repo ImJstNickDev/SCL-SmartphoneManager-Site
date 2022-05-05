@@ -13,12 +13,12 @@
     $marca = $_POST['marca'];
     $modello = $_POST['modello'];
     $prezzo = $_POST['prezzo'];
-    $conn = new mysqli("localhost", "root", "", "DBTelefonini");
+    $conn = new mysqli("localhost", "phpmadmin", "amministratore", "DBTelefonini");
     if($conn->connect_errno)
     {
         exit;
     }
-    $query = 'UPDATE Telefoni SET marca = "'.$marca.'", modello = "'.$modello.'", prezzo = "'.$prezzo.'" WHERE id = '.$id.';';
+    $query = 'UPDATE telefoni SET marca = "'.$marca.'", modello = "'.$modello.'", prezzo = "'.$prezzo.'" WHERE id = '.$id.';';
     $result = $conn->query($query);
     if($result)
     {

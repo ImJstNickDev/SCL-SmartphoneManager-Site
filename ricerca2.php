@@ -31,7 +31,7 @@
     $sqlwhere = "WHERE ";
 
 	// Apertura bridge con il database MySQL e la connessione al database MySQL. Se la connessione non è andata a buon fine, stampo un messaggio di errore.
-	$conn = new mysqli("localhost", "root", "", "DBTelefonini");
+	$conn = new mysqli("localhost", "phpmadmin", "amministratore", "DBTelefonini");
 	if($conn->connect_errno)
 	{
 		echo("Connessione fallita: ".$conn->connect_error);

@@ -11,12 +11,12 @@
         <form action="eliminazione3.php" method="post" class="forms">
 <?php
     $id = $_POST['id'];
-    $conn = new mysqli("localhost", "root", "", "DBTelefonini");
+    $conn = new mysqli("localhost", "phpmadmin", "amministratore", "DBTelefonini");
     if($conn->connect_errno)
     {
         exit;
     }
-    $query = 'SELECT * FROM Telefoni WHERE id = '.$id.';';
+    $query = 'SELECT * FROM telefoni WHERE id = '.$id.';';
     $result = $conn->query($query);
     $row = $result->fetch_assoc();
     echo'

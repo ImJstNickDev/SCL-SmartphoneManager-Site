@@ -214,12 +214,12 @@ body{
 
 .container .card{
     position: relative;
-    cursor: pointer;
+    cursor: default;
 }
 
 .container .card .face{
     width: 300px;
-    height: 200px;
+    height: 300px;
     transition: 0.5s;
 }
 
@@ -230,7 +230,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(200px);
 }
 
 .container .card:hover .face.face1{

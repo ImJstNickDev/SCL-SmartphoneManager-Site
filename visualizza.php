@@ -24,12 +24,13 @@
 			</tr>
 				
 <?php
-	$conn = new mysqli("localhost", "root", "", "DBTelefonini");
+	$conn = new mysqli("localhost", "phpmadmin", "amministratore", "DBTelefonini");
+	
 	if($conn->connect_errno)
 	{
 		exit;
 	}
-	$query = 'SELECT * FROM Telefoni';
+	$query = 'SELECT * FROM telefoni';
 	$result = $conn->query($query);
 	while($row = $result->fetch_assoc())
 	{
