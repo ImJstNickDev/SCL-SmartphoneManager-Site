@@ -23,7 +23,8 @@
                 <a href="eliminazione.php"><li>Elimina Smartphone</li></a>
                 <a href="modifica.php"><li>Modifica Smartphone</li></a>
                 <a href="ricerca.php"><li>Cerca Smartphone</li></a>
-                <a href="visualizza.php"><li>Lista Smartphone</li></a>
+		<a href="visualizza.php"><li>Lista Smartphone</li></a>
+		<a href="sendmail.php"><li>Test SendMail</li></a>
                 <a href="" target="_blank"><li>Show me more</li></a>
               </ul>
             </div>
