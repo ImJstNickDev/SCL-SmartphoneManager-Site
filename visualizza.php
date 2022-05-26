@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma che stamo a visualizzà</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	
 	<center>
-		<table>
+		<table class="visualizza">
 			<tr>
 				<th>ID</th>
 				<th>Marca</th>
@@ -73,6 +73,6 @@
 ?>
 </table>
 <br><br><br>
-<center><a href="index.php" class="button">Torna alla Home</a></center>
+<center><a href="index.php" class="button goback">Torna alla Home</a></center>
 </body>
 </html>

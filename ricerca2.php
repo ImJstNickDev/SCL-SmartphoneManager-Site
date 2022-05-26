@@ -4,12 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma che stamo a cercà</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	
 	<center>
-		<table>
+		<table class="visualizza">
 			<tr>
 				<th>ID</th>
 				<th>Marca</th>
@@ -76,7 +76,7 @@
     }
     // Aggiunge il punto e virgola
     $sqlquery = $sqlquery.";";
-    echo($sqlquery);
+    // echo($sqlquery);
 	// Esegue la query SQL e salva il risultato in una variabile $result (risultato della query SQL) e controlla se ci sono risultati. se non ci sono risultati, stampo un messaggio di errore.
 	$result = $conn->query($sqlquery);
 	if(!$result)
@@ -95,8 +95,18 @@
 					<td>'.$row["marca"].'</td>
 					<td>'.$row["modello"].'</td>
 					<td>'.$row["prezzo"].'</td>
+			';
+			if(isset($_SESSION['username']))
+			{
+				if($_SESSION['userlevel'] >= 2)
+				{
+					echo '<td><a class="button" href="modifica2.php?id='.$row["id"].'">Modifica</a></td>';
+					echo '<td><a class="button" href="eliminazione2.php?id='.$row["id"].'">Elimina</a></td>';
+				}
+			}
+			echo
+			'
 				</tr>
-				
 			';
 		}
 	}
@@ -105,6 +115,6 @@
 ?>
 </table>
 <br><br><br>
-<center><a href="index.php" class="button">Torna alla Home</a></center>
+<center><a href="index.php" class="button goback">Torna alla Home</a></center>
 </body>
 </html>

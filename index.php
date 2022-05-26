@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartphone Manager</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div id="header">
@@ -23,7 +23,7 @@
                     session_start();
                     if(isset($_SESSION['username']))
                     {
-                        if($_SESSION['userlevel'] == 2)
+                        if($_SESSION['userlevel'] >= 2)
                         {
                             echo(
                                 '
@@ -33,15 +33,24 @@
                                 '
                             );
                         }
+                        if($_SESSION['userlevel'] >= 3)
+                        {
+                            echo
+                            (
+                                '
+                                    <a href="usermanager.php"><li>Gestisci Utenti / Newsletter</li></a>
+                                '
+                            );
+                        }
                     }
                 ?>
                 <a href="ricerca.php"><li>Cerca Smartphone</li></a>
 		        <a href="visualizza.php"><li>Lista Smartphone</li></a>
-                <a href="" target="https://github.com/ImJstNickDev"><li>I miei progetti</li></a>
+                <a href="https://github.com/ImJstNickDev" target="_blank"><li>I miei progetti</li></a>
               </ul>
             </div>
           </nav>
-          <center><h1>Gestione Smartphone</h1></center>
+          <center><h1 style="font-size: 3.9em; margin: 0; margin-top:10%;">Gestione Smartphone</h1></center>
 	<div class="divlogin">
         <?php
             if(isset($_SESSION['username']))
@@ -60,7 +69,7 @@
                 <div class="face face1">
                     <div class="content">
                         <div class="cardicon">
-                            <img src="lista.png"/>
+                            <img src="imgs/lista.png"/>
                         </div>
                         <h3>Lista</h3>
                     </div>
@@ -89,7 +98,7 @@
             <?php
                 if(isset($_SESSION['username']))
                 {
-                    if($_SESSION['userlevel'] == 2)
+                    if($_SESSION['userlevel'] >= 2)
                     {
                         echo
                         (
@@ -98,7 +107,7 @@
                                 <div class="face face1">
                                     <div class="content">
                                         <div class="cardicon">
-                                            <img src="aggiungi.png">
+                                            <img src="imgs/aggiungi.png">
                                         </div>
                                         <h3>Aggiungi</h3>
                                     </div>
@@ -106,7 +115,7 @@
                                 <div class="face face2">
                                     <div class="content">
                                         <p>Inserisci Nuovo Dispositivo</p>
-                                            <a href="inserimento.php">Inserisci nuovo dispositivo</a>
+                                            <center><a href="inserimento.php">Inserisci nuovo dispositivo</a></center>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +128,7 @@
                 <div class="face face1">
                     <div class="content">
                         <div class="cardicon">
-                            <img src="ricerca.png"/>
+                            <img src="imgs/ricerca.png"/>
                         </div>
                         <h3>Cerca</h3>
                     </div>
@@ -127,7 +136,7 @@
                 <div class="face face2">
                     <div class="content">
                         <p>Cerca un dispositivo</p>
-                            <a href="ricerca.php">Cerca un dispositivo</a>
+                            <center><a href="ricerca.php">Cerca un dispositivo</a></center>
                     </div>
                 </div>
             </div>

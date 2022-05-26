@@ -13,7 +13,7 @@
                         <meta http-equiv="X-UA-Compatible" content="IE=edge">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <title>Ma che stamo a eliminà</title>
-                        <link rel="stylesheet" href="styles.css">
+                        <link rel="stylesheet" href="css/styles.css">
                     </head>
                     <body>
                         <div class="fcontainer">
@@ -38,13 +38,13 @@
                         $row = $result->fetch_assoc();
                         echo
                         '
-                            <input type="text" name="id" placeholder="ID" value="'.$id.'" readonly>
+                            <input class="imput" type="text" name="id" placeholder="ID" value="'.$id.'" readonly>
                             <br>
-                            <input type="text" name="marca" placeholder="Marca" value="'.$row['marca'].'" readonly>
+                            <input class="imput" type="text" name="marca" placeholder="Marca" value="'.$row['marca'].'" readonly>
                             <br>
-                            <input type="text" name="modello" placeholder="Modello" value="'.$row['modello'].'" readonly>
+                            <input class="imput" type="text" name="modello" placeholder="Modello" value="'.$row['modello'].'" readonly>
                             <br>
-                            <input type="text" name="prezzo" placeholder="Prezzo" value="'.$row['prezzo'].'" readonly>
+                            <input class="imput" type="text" name="prezzo" placeholder="Prezzo" value="'.$row['prezzo'].'" readonly>
                             <br>
                         ';
                         $result->free();
@@ -52,7 +52,7 @@
             echo
             (
                 '
-                                <input type="submit" value="Conferma">
+                                <input class="imput" type="submit" value="Conferma">
                             </form>
                         </div>
                     </body>

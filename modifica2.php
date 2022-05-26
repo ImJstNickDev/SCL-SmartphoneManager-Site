@@ -13,10 +13,10 @@
                         <meta http-equiv="X-UA-Compatible" content="IE=edge">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <title>Ma che stamo a modificà</title>
-                        <link rel="stylesheet" href="styles.css">
+                        <link rel="stylesheet" href="css/styles.css">
                     </head>
                     <body>
-                        <center><h1>Modifica i dati</h1></center>
+                        <center><h1 style="font-size: 5.5em; margin-top: 10px;">Modifica i dati</h1></center>
                         <div class="fcontainer">
                             <form action="modifica3.php" method="post" class="forms">
                 '

@@ -1,6 +1,6 @@
 <?php
 $from = "Pippo";
-$to = "sozio.racigno@gmail.com";
+$to = "niconotnicko@gmail.com";
 $subject = "Ciao?";
 $message = '<h1>Ciao? Sai che tecnicamente i cani sono un liquido? Ah no? Beh ora lo sai...</h1>
 <br><img src="https://www.pngall.com/wp-content/uploads/4/Golden-Retriever-Puppy-PNG-High-Quality-Image.png">';
