@@ -48,7 +48,7 @@
     if($marca != "")
     {
         $sqlwhere = $sqlwhere . "marca = '".$marca."'";
-		$gate = true;
+	$gate = true;
     }
 	
     // Controlla se il Modello è nullo

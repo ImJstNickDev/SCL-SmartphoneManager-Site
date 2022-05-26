@@ -1,9 +1,9 @@
 #content
 {
-    margin: 0 auto;
-    width: 70%;
-    background-color: #232323;
-    
+	margin: 0 auto;
+	width: 70%;
+	background-color: #232323;
+	
 
 }
 
@@ -25,13 +25,13 @@ a.button {
 
 table
 {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #232323;
-    background-color: #232323;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #232323;
+	background-color: #232323;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
 }
 
 
@@ -95,33 +95,33 @@ body
  */
 #menuToggle span
 {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 3;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  	display: block;
+  	width: 33px;
+  	height: 4px;
+  	margin-bottom: 5px;
+  	position: relative;
+	
+	background: #cdcdcd;
+  	border-radius: 3px;
+	
+	z-index: 3;
+	
+  	transform-origin: 4px 0px;
+	
+  	transition:	transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+			 	opacity 0.55s ease;
 }
 
 #menuToggle span:first-child
 {
-  transform-origin: 0% 0%;
-  z-index: 3;
+  	transform-origin: 0% 0%;
+  	z-index: 3;
 }
 
 #menuToggle span:nth-last-child(2)
 {
-  transform-origin: 0% 100%;
+  	transform-origin: 0% 100%;
 }
 
 /* 
@@ -130,9 +130,9 @@ body
  */
 #menuToggle input:checked ~ span
 {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  	opacity: 1;
+  	transform: rotate(45deg) translate(-2px, -1px);
+  	background: #232323;
 }
 
 /*
@@ -140,34 +140,34 @@ body
  */
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  	opacity: 0;
+  	transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  	transform: rotate(-45deg) translate(0, -1px);
 }
 
 
 #menu
 {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  z-index: 2;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  	position: absolute;
+  	width: 300px;
+  	margin: -100px 0 0 -50px;
+  	padding: 50px;
+  	padding-top: 125px;
+  	z-index: 2;
+	
+  	background: #ededed;
+  	list-style-type: none;
+  	-webkit-font-smoothing: antialiased;
+	
+  	transform-origin: 0% 0%;
+  	transform: translate(-100%, 0);
+
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
@@ -186,178 +186,208 @@ body
 
 #pagina
 {
-    margin: 0 auto;
-    width: auto;
+	margin: 0 auto;
+	width: auto;
 }
 
 
 
 body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #333;
-    
-    justify-content: center;
-    align-items: center;
-    font-family: consolas;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background: #333;
+	
+	justify-content: center;
+	align-items: center;
+	font-family: consolas;
 }
 
 .container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+	width: 1000px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .container .card{
-    position: relative;
-    cursor: default;
+	position: relative;
+	cursor: default;
 }
 
 .container .card .face{
-    width: 300px;
-    height: 300px;
-    transition: 0.5s;
+	width: 300px;
+	height: 300px;
+	transition: 0.5s;
 }
 
 .container .card .face.face1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(200px);
+	position: relative;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(200px);
 }
 
 .container .card:hover .face.face1{
-    /*background: #ff0057;*/
-    background: #001891a2;
-    transform: translateY(0);
+	/*background: #ff0057;*/
+	background: #001891a2;
+	transform: translateY(0);
 }
 
 .container .card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
+	opacity: 0.2;
+	transition: 0.5s;
 }
 
 .container .card:hover .face.face1 .content{
-    opacity: 1;
+	opacity: 1;
 }
 
 .container .card .face.face1 .content img{
-    max-width: 100px;
+	max-width: 100px;
 }
 
 .container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
 }
 
 .container .card .face.face2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+	transform: translateY(-100px);
 }
 
 .container .card:hover .face.face2{
-    transform: translateY(0);
+	transform: translateY(0);
 }
 
 .container .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .container .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
+	margin: 15px 0 0;
+	display:  inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: #333;
+	padding: 5px;
+	border: 1px solid #333;
 }
 
 .container .card .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
+	background: #333;
+	color: #fff;
 }
 
 .cardicon
 {
-    text-align: center;
+	text-align: center;
 }
 
 .fcontainer
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: fit-content;
-    padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: fit-content;
+	padding-top: 40px;
 }
 .forms
 {
-    /*Center the div*/
-    margin: 0 auto;
-    margin-top: 500px;
-    width: fit-content;
-    /*Add margin within the rows*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /*Add padding within the rows*/
-    padding: 20px;
-    /*Add border*/
-    border: 1px solid rgb(49, 49, 49);
-    /*Add rounded corners*/
-    border-radius: 5px;
-    /*Add shadows*/
-    box-shadow: 5px 5px 50px rgb(0, 0, 0);
-    /*Add background color*/
-    background-color: #fff;
-    /*Align things in the div on center*/
-    text-align: center;
-    /*Space items in div vertically*/ 
-    display: flex;
-    flex-direction: column;
-    /*Align items vertically*/
-    align-items: center;
-    /*Add a margin on the top*/
-    margin-top: 10px;
-    /*Add a margin on the bottom*/
-    margin-bottom: 10px;
-    /*Add font family*/
-    font-family: consolas;
+	/*Center the div*/
+	margin: 0 auto;
+	margin-top: 500px;
+	width: fit-content;
+	/*Add margin within the rows*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*Add padding within the rows*/
+	padding: 20px;
+	/*Add border*/
+	border: 1px solid rgb(49, 49, 49);
+	/*Add rounded corners*/
+	border-radius: 5px;
+	/*Add shadows*/
+	box-shadow: 5px 5px 50px rgb(0, 0, 0);
+	/*Add background color*/
+	background-color: #fff;
+	/*Align things in the div on center*/
+	text-align: center;
+	/*Space items in div vertically*/ 
+	display: flex;
+	flex-direction: column;
+	/*Align items vertically*/
+	align-items: center;
+	/*Add a margin on the top*/
+	margin-top: 10px;
+	/*Add a margin on the bottom*/
+	margin-bottom: 10px;
+	/*Add font family*/
+	font-family: consolas;
 
 }
 
 ::-webkit-input-placeholder {
-  text-align: center;
+  	text-align: center;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  text-align: center;  
+  	text-align: center;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  text-align: center;  
+  	text-align: center;  
 }
 
 :-ms-input-placeholder {  
-  text-align: center; 
+  	text-align: center; 
+}
+
+.loginbutton {
+	position:absolute;
+	top: 0%;
+	right: 1%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2.1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 40px;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+}
+
+.loginbutton:hover {
+	/*change the background color smoothly*/
+	background-color:rgb(38, 38, 38);
+	transition: background-color 0.6s ease;
+	color: #fff;
+}
+
+.imput
+{
+	font-size: 3.5em;
 }

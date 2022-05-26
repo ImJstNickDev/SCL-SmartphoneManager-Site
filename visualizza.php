@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +18,16 @@
 				<th>Marca</th>
 				<th>Modello</th>
 				<th>Prezzo</th>
+				<?php
+					if(isset($_SESSION['username']))
+					{
+						if($_SESSION['userlevel'] >= 2)
+						{
+							echo "<th>Modifica</th>";
+							echo "<th>Elimina</th>";
+						}
+					}
+				?>
 			</tr>
 			<tr>
 				<td></td>
@@ -41,9 +54,18 @@
 				<td>'.$row["id"].'</td>
 				<td>'.$row["marca"].'</td>
 				<td>'.$row["modello"].'</td>
-				<td>'.$row["prezzo"].'</td>
+				<td>'.$row["prezzo"].'</td>';
+		if(isset($_SESSION['username']))
+		{
+			if($_SESSION['userlevel'] >= 2)
+			{
+				echo '<td><a class="button" href="modifica2.php?id='.$row["id"].'">Modifica</a></td>';
+				echo '<td><a class="button" href="eliminazione2.php?id='.$row["id"].'">Elimina</a></td>';
+			}
+		}
+		echo
+		'
 			</tr>
-			
 		';
 	}
 	$result->free();

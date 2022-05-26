@@ -19,17 +19,40 @@
 
               <ul id="menu">
                 <a href="#"><li>Home</li></a>
-                <a href="inserimento.php"><li>Aggiungi Smartphone</li></a>
-                <a href="eliminazione.php"><li>Elimina Smartphone</li></a>
-                <a href="modifica.php"><li>Modifica Smartphone</li></a>
+                <?php
+                    session_start();
+                    if(isset($_SESSION['username']))
+                    {
+                        if($_SESSION['userlevel'] == 2)
+                        {
+                            echo(
+                                '
+                                    <a href="inserimento.php"><li>Aggiungi Smartphone</li></a>
+                                    <a href="eliminazione.php"><li>Elimina Smartphone</li></a>
+                                    <a href="modifica.php"><li>Modifica Smartphone</li></a>
+                                '
+                            );
+                        }
+                    }
+                ?>
                 <a href="ricerca.php"><li>Cerca Smartphone</li></a>
-		<a href="visualizza.php"><li>Lista Smartphone</li></a>
-		<a href="sendmail.php"><li>Test SendMail</li></a>
-                <a href="" target="_blank"><li>Show me more</li></a>
+		        <a href="visualizza.php"><li>Lista Smartphone</li></a>
+                <a href="" target="https://github.com/ImJstNickDev"><li>I miei progetti</li></a>
               </ul>
             </div>
           </nav>
           <center><h1>Gestione Smartphone</h1></center>
+	<div class="divlogin">
+        <?php
+            if(isset($_SESSION['username']))
+            {
+                echo('<a href="logout.php"><p class="loginbutton">LOGOUT</p></a>');
+            } else
+            {
+                echo('<a href="login.php"><p class="loginbutton">LOGIN</p></a>');
+            }
+        ?>
+    </div>
     </div>
     <div id="pagina">
         <div class="container">
@@ -63,22 +86,35 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="cardicon">
-                            <img src="aggiungi.png">
-                        </div>
-                        <h3>Aggiungi</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Inserisci Nuovo Dispositivo</p>
-                            <a href="inserimento.php">Inserisci nuovo dispositivo</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+                if(isset($_SESSION['username']))
+                {
+                    if($_SESSION['userlevel'] == 2)
+                    {
+                        echo
+                        (
+                            '
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="cardicon">
+                                            <img src="aggiungi.png">
+                                        </div>
+                                        <h3>Aggiungi</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Inserisci Nuovo Dispositivo</p>
+                                            <a href="inserimento.php">Inserisci nuovo dispositivo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        '
+                        );
+                    }
+                }
+            ?>
             <div class="card">
                 <div class="face face1">
                     <div class="content">
