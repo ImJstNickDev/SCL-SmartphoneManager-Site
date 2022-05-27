@@ -237,7 +237,7 @@ Speciali ringraziamenti a questi strumenti per avermi semplificato la vita:
 [issues-shield]: https://img.shields.io/github/issues/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
 [issues-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/issues
 [license-shield]: https://img.shields.io/github/license/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
-[license-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/blob/master/LICENSE.txt
+[license-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/blob/master/LICENSE
 [product-screenshot]: imgs/index_screenshot.png
 [visualizzazione-screenshot]: imgs/visualizzazione_screenshot.png
 [ricerca-screenshot]: imgs/ricerca_screenshot.png
