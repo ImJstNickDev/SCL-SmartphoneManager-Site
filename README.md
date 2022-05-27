@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 Il nostro sito web è una base dati di telefoni che consente agli utenti di cercare e confrontare i prezzi dei telefoni cellulari. Offriamo una vasta gamma di telefoni cellulari di tutte le marche e modelli, quindi siamo sicuri di avere il telefono perfetto per te. Non importa se stai cercando il telefono più recente o il telefono più economico, noi lo abbiamo. Basta cercare il telefono che desideri e confrontare i prezzi per trovare la migliore offerta.
 
@@ -110,7 +110,7 @@ Istruzioni per l'installazione di XAMPP:
 
 ### Installation
 
-    _Di seguito troverai le istruzioni per installare il sito web in modo che possa funzionare correttamente._
+_Di seguito troverai le istruzioni per installare il sito web in modo che possa funzionare correttamente._
 
 1. Clona il repository su un computer locale.
    ```sh
