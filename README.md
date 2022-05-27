@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite">
-    <img src="imgs/lista.png" alt="Logo" width="80" height="80">
+    <img src="imgs/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Smartphone Manager</h3>
@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
 Il nostro sito web è una base dati di telefoni che consente agli utenti di cercare e confrontare i prezzi dei telefoni cellulari. Offriamo una vasta gamma di telefoni cellulari di tutte le marche e modelli, quindi siamo sicuri di avere il telefono perfetto per te. Non importa se stai cercando il telefono più recente o il telefono più economico, noi lo abbiamo. Basta cercare il telefono che desideri e confrontare i prezzi per trovare la migliore offerta.
 
