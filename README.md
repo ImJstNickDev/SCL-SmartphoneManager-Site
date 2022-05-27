@@ -4,7 +4,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](license-shield)][license-shield]
 
 
 
@@ -236,8 +236,8 @@ Speciali ringraziamenti a questi strumenti per avermi semplificato la vita:
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/issues
-[license-shield]: https://img.shields.io/github/license/ImJstNickDev/SCL_SmartphoneManagerSite.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
+[license-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/blob/master/LICENSE
 [product-screenshot]: imgs/index_screenshot.png
 [visualizzazione-screenshot]: imgs/visualizzazione_screenshot.png
 [ricerca-screenshot]: imgs/ricerca_screenshot.png
