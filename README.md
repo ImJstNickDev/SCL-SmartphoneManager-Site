@@ -4,7 +4,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![License: GPL v3](license-shield)][license-shield]
+[![License][license-shield]][license-shield]
 
 
 
