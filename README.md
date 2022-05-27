@@ -235,8 +235,8 @@ Speciali ringraziamenti a questi strumenti per avermi semplificato la vita:
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/issues
+[license-shield]: https://img.shields.io/github/license/ImJstNickDev/SCL_SmartphoneManagerSite.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [product-screenshot]: imgs/index_screenshot.png
 [visualizzazione-screenshot]: imgs/visualizzazione_screenshot.png
