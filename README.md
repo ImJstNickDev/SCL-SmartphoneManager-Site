@@ -228,16 +228,16 @@ Speciali ringraziamenti a questi strumenti per avermi semplificato la vita:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
+[contributors-url]: https://github.com/ImJstNickDev/SCL-SmartphoneManager-Site/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
+[forks-url]: https://github.com/ImJstNickDev/SCL-SmartphoneManager-Site/network/members
+[stars-shield]: https://img.shields.io/github/stars/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
+[stars-url]: https://github.com/ImJstNickDev/SCL-SmartphoneManager-Site/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
 [issues-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/issues
-[license-shield]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
-[license-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/ImJstNickDev/SCL-SmartphoneManager-Site.svg?style=for-the-badge
+[license-url]: https://github.com/ImJstNickDev/SCL_SmartphoneManagerSite/blob/master/LICENSE.txt
 [product-screenshot]: imgs/index_screenshot.png
 [visualizzazione-screenshot]: imgs/visualizzazione_screenshot.png
 [ricerca-screenshot]: imgs/ricerca_screenshot.png
